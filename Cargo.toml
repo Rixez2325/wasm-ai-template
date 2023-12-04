@@ -1,0 +1,15 @@
+[package]
+name = "wasm-ai-template" # Nom du projet
+version = "0.1.0" # Version du build courant de votre librairie/application
+edition = "2021" # Utiliser la dernière version de Rust publiée en 2021
+
+[lib]
+crate-type = ["cdylib", "rlib"] # Permet de créer une librairie dynamique et une librairie statique
+
+[dependencies]
+wasm-bindgen = "0.2.89" # Permet de lier le code Rust avec le code JavaScript
+cfg-if = "1.0.0" # Permet de définir des conditions de compilation
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3.39" # Permet de tester le code Rust avec le code JavaScript
+
